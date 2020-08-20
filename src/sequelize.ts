@@ -72,8 +72,6 @@ export default async function (app: Application): Promise<void> {
         (models[name] as any).associate(models)
       }
     })
-    // Sync to the database
-    app.set('sequelizeSync', sequelize.sync())
 
     return result
   }
