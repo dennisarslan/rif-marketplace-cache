@@ -32,7 +32,7 @@ export function sequelizeFactory (): Sequelize {
     transactionType: 'IMMEDIATE'
   }
 
-  return new Sequelize(config.get('db'), dbSettings)
+  return new Sequelize(`sqlite:${config.get('db')}`, dbSettings)
 }
 
 export function BigNumberStringType (propName: string): Partial<ModelAttributeColumnOptions> {

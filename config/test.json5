@@ -1,5 +1,5 @@
 {
-  db: 'sqlite://db_test.sqlite',
+  db: 'db_test.sqlite',
   blockchain: {
     provider: 'ws://localhost:8545',
     waitBlockCountBeforeConfirmationRemoved: 10
