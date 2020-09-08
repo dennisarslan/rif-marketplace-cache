@@ -76,7 +76,7 @@ export function blockMock (blockNumber: number, blockHash = '0x123', options: Pa
   return block
 }
 
-export function rmDir (folder: string) {
+export function rmDir (folder: string): void {
   if (fs.existsSync(folder)) {
     for (const file of fs.readdirSync(folder)) {
       fs.unlinkSync(path.join(folder, file))
